@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.6;
+    background-color: #F0F0F6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4 {
+    color: #222;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Navbar */
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    position: sticky;
+    height: 152px;
+    width: 100%;
+}
+.skill{
+    padding: 10px 20px; 
+    background-color: #ffcc00; 
+    border-radius: 10%;
+}
+.logo{
+    position: absolute;
+    width: 158px;
+    height: 76px;
+    left: 98px;
+}
+.nav-cont{
+    position: absolute;
+    background-color: #fff;
+    height: 37px;
+    width: 604px;
+    gap: 40px;
+    right: 98px;
+}
+
+.nav-cont ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+    rotate: -90;
+} 
+
+/* Main Section */
+main{
+    width: 100%;
+}
+.skills-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.skills-section h2{
+    /* width: 1245px;
+    height: 41px; */
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.55px;
+    text-align: center;
+    color: #2b2b2b;
+}
+
+.skills-section p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #767676;
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin-left: 98px;
+    padding-right: 0px;
+
+}
+
+.skill-card {
+    background-color: white;
+    padding: 10px 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 385px;
+  /* height: 450px; */
+ /* Ensure constant height */
+}
+
+.skill-card h3 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    height: 8px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin: 0;
+}
+
+.progress {
+    background-color: #f1c40f;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.percentage {
+    float: right;
+}
+
+.add-skill {
+    background-color: #f1c40f;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/* Modal container */
+/* Modal Styling */
+.modal {
+    display: none;
+    position: absolute;
+    left: 80px;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    gap: 10px;
+    border-radius: 8px;
+    width: 833px;
+    height: 700px; /* Adjusted width */
+    position: relative;
+    padding-bottom: 80px; /* Prevent overlap with buttons */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.input-field {
+    width: 777px;
+    height: 54px;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    background-color: #f5f5fa;
+    font-size: 14px;
+    color: #7d7d7d;
+    margin-bottom: 10px;
+}
+
+.input-field[readonly] {
+    background-color: #f5f5fa;
+    color: #999;
+}
+
+.skills-wrapper {
+    margin-top: 10px;
+}
+
+.skills-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.input-field.proficiency {
+    width: 30%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; /* Adds space between the buttons */
+    position: absolute;
+    bottom: 20px; /* Positioned 20px from the bottom */
+    right: 20px; /* Positioned 20px from the right */
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn.add {
+    background-color: #ffb300;
+    color: white;
+}
+
+.btn.cancel {
+    background-color: transparent;
+    color: #ff5f5f;
+    border: 1px solid #ff5f5f;
+}
+
+/* Footer */
+.Footer{
+    position: absolute;
+    width: 100%;
+    height: 621px;
+    /* top: 3356px; */
+    background-color: #F0F0F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.comp-logo{
+    display: flex;
+    justify-content: space-between;
+    width: 970px;
+    height: 144px;
+    /* background-color: #05FF00; */
+    padding: 0px;
+}
+.comp-logo img{
+    width: 140px;
+    height: 144px;
+}
+.links{
+    position: relative;
+    width: 100%;
+    height: 401px;
+    padding: 45px 98px ;
+    /* background-color: #e6b800; */
+}
+.single-logo{
+    position: absolute;
+    
+}
+.link-contain{
+    position: absolute;
+    bottom: 0px;
+    width: 1244px;
+    height: 230px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+.comp-link{
+    width: 177px;
+    height: 230px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.c-logo{
+    display: flex;
+    flex-direction: column;
+  width: 177px;
+  height: 61px;
+}
+.c-logo img{
+width: 91px;
+height: 40px;
+border-radius: 4px;
+}
+.c-logo p{
+    width: 177px;
+    height: 21px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #767676;
+}
+.link-name{
+    position: absolute;
+    top: 0%;
+    right: 0;
+    width: 780px;
+    height: 202px;
+    display: flex;
+    justify-content: space-between;
+    gap: 170px;
+    /* background-color: #05FF00; */
+}
+.link-cards{
+    width: 141px;
+    height: 202px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.quick-names{
+    width: 141px;
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.portfolio-names{
+    width: 500px;
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.portfolio-names p{
+    width: 174px;
+    height: 24px;
+}
+.connect-names{
+    display: flex;
+    flex-direction: column;
+    width: 125px;
+    height: 107px;
+    gap: 16px;
+}
+.copyright{
+    /* color: red; */
+    margin-top: 20px;
+}

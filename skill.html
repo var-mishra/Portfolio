@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills & Languages</title>
+    <link rel="stylesheet" href="skill.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/assets/logo.png" alt="Logo">
+            </div>
+            <div class="nav-cont">
+                <ul>
+                    <li><a href="demo.html">Home</a></li>
+                    <li><a class="skill" href="skill.html">Skills</a></li>
+                    <li><a href="education">Education</a></li>
+                    <li><a href="projects">Projects</a></li>
+                    <li><a href="recommendations">Recommendations</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    <main>
+        <div class="skills-section">
+            <h2>Skills & Languages</h2>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua <br> dolor do amet sint. Velit officia consequat duis enim velit mollit. <br> lorem ipsum</p>
+
+            <div id="skills-grid" class="skills-grid">
+                <!-- Existing Skill Cards -->
+                <div class="skill-card">
+                    <h3>Front End Development</h3>
+                    <p>Html <span class="percentage">90%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <p>CSS <span class="percentage">85%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                    <p>Js <span class="percentage">80%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                    <p>PHP <span class="percentage">75%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                    <p>WordPress <span class="percentage">85%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Languages</h3>
+                    <p>Hindi <span class="percentage">90%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <p>English <span class="percentage">85%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Back End Development</h3>
+                    <p>NodeJs <span class="percentage">90%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <p>SSr <span class="percentage">85%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <button class="add-skill">Add Skill</button>
+        </div>
+
+        <!-- Modal -->
+        <!-- Modal -->
+        <div class="modal" id="addSkillModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Add Skill</h2>
+
+                <label for="domain">Domain</label>
+                <input type="text" id="domain" class="input-field" placeholder="Front End Developer" />
+
+                <h3>Skills</h3>
+                <div class="skills-wrapper">
+                    <div class="skills-header">
+                        <span>Skill</span>
+                        <span>Proficiency (%)</span>
+                    </div>
+                    <div class="skills-row">
+                        <input type="text" class="input-field" placeholder="Skill">
+                        <input type="number" class="input-field proficiency" placeholder="Proficiency (%)" min="0"
+                            max="100">
+                    </div>
+                    <div class="skills-row">
+                        <input type="text" class="input-field" placeholder="Skill">
+                        <input type="number" class="input-field proficiency" placeholder="Proficiency (%)" min="0"
+                            max="100">
+                    </div>
+                    <div class="skills-row">
+                        <input type="text" class="input-field" placeholder="Skill">
+                        <input type="number" class="input-field proficiency" placeholder="Proficiency (%)" min="0"
+                            max="100">
+                    </div>
+                    <div class="skills-row">
+                        <input type="text" class="input-field" placeholder="Skill">
+                        <input type="number" class="input-field proficiency" placeholder="Proficiency (%)" min="0"
+                            max="100">
+                    </div>
+                    <div class="skills-row">
+                        <input type="text" class="input-field" placeholder="Skill">
+                        <input type="number" class="input-field proficiency" placeholder="Proficiency (%)" min="0"
+                            max="100">
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button id="submitSkill" class="btn add">Add Skill</button>
+                    <button id="cancelSkill" class="btn cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="Footer">
+        <div class="comp-logo">
+            <img src="/assets/flogo1.png" alt="Logo 1">
+            <img src="/assets/flogo2.png" alt="Logo 2">
+            <img src="/assets/flogo3.png" alt="Logo 3">
+            <img src="/assets/flogo4.png" alt="Logo 4">
+        </div>
+
+        <div class="links">
+            <div class="single-logo">
+                <img src="/assets/logo.png" alt="Logo 5">
+            </div>
+            <div class="link-contain">
+                <div class="comp-link">
+                    <div class="c-logo">
+                        <img src="/assets/ftimg1.jfif" alt="linkedin">
+                        <p>4.5/5 rating on Lorem</p>
+                    </div>
+                    <div class="c-logo">
+                        <img src="/assets/ftimg2.jfif" alt="linkedin">
+                        <p>9/10 rating on Ipsum</p>
+                    </div>
+                    <div class="c-logo">
+                        <img src="/assets/ftimg3.jfif" alt="linkedin">
+                        <p>4.5/5 Rating on dorel</p>
+                    </div>
+                </div>
+                <div class="link-name">
+                    <div class="link-cards">
+                        <h4>Quick Links</h4>
+                        <div class="quick-names">
+                            <a>Home</a>
+                            <a>Skills</a>
+                            <a>Education</a>
+                            <a>Projects</a>
+                            <a>Recommendations</a>
+                        </div>
+                    </div>
+                    <div class="link-cards">
+                        <h4>Portfolio</h4>
+                        <div class="portfolio-names">
+                            <p>Frontend Development</p>
+                            <p>Backend Development</p>
+                            <p>Website Design</p>
+                            <a>Machine Learning</a>
+                            <a>Problem Solving & DSA</a>
+                        </div>
+                    </div>
+                    <div class="link-cards">
+                        <h4>Connect</h4>
+                        <div class="connect-names">
+                            <img src="/assets/linkedin.png" alt="" width="100px" height="25px">
+                            <img src="/assets/instagram.png" alt="" width="125px" height="25px">
+                            <img src="/assets/facebook.png" alt="" width="107px" height="25px">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p class="copyright">&copy; 2024 Copyright, All Rights Reserved</p>
+        </div>
+    </div>
+    </div>
+    <script src="skill.js"></script>
+</body>
+
+</html>
